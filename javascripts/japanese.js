@@ -25,4 +25,4 @@ function translate(userPhrase) {
         }
     
     
-module.exports = {trasnlate};
+module.exports = {translate};

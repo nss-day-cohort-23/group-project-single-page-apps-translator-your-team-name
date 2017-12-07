@@ -6,14 +6,14 @@
         Christmas: "Weihnachten",
         and: "und",
         happy: "glücklich",
-        new: "neu",
-        year: "jahr" };
+        New: "neu",
+        Year: "jahr" };
 
 function translate(userPhrase) {
-  let translatePhrase = "";
+  let translatePhrase = " ";
 
   for (let i = 0; i < userPhrase.length; i++) {
-    translatePhrase += `${deutsche[userPhrase[i]]}`;
+    translatePhrase += `${deutsche[userPhrase[i]]}` + " ";
   }
 
   document.querySelector("#translationPhrase").innerHTML = translatePhrase;

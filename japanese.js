@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 
 let japanese = {
@@ -22,6 +22,7 @@ let kanji = ""
 
 for (let i=0; i<inputARR.length; i++){
    japanese += `${kanji[inputARR[i]]}`;
-}
+};
 
-console.log(japanese)
+console.log(japanese);
+

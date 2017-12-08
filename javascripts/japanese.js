@@ -3,26 +3,31 @@
 
 const japanese = {
 
-    "Merry" : "メリー",
-    "Christmas" : "クリスマス",
+    "merry" : "メリー",
+    "christmas" : "クリスマス",
     "and" : "そして",
     "happy" : "ハッピー",
-    "New" : "新しい",
-    "Year" : "年",
+    "new" : "新しい",
+    "year" : "年",
 
 };
 
-
+// let translatePhrase = "";
 function translate(userPhrase) {
-
+    
         let translatePhrase = "";
-
+    
             for (let i=0; i<userPhrase.length; i++) {
-                translatePhrase += `${japanese[userPhrase[i]]}` + " ";
-            }
-
+                console.log(japanese[userPhrase[i]]);
+                if (japanese[userPhrase[i]] !== undefined){
+                    translatePhrase += `${japanese[userPhrase[i]]}` + " ";       
+                } else {
+                    alert("I'm too busy learning javascript to work on my Japanese");
+                }    
+            }  
+    
             document.querySelector("#translationPhrase").innerHTML = translatePhrase;
         }
-
+    
 
 module.exports = {translate};

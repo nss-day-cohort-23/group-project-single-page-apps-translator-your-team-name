@@ -2,12 +2,12 @@
 
 
 const france = {
-    "Merry": "Joyeux" ,
-    "Christmas":"Noel" ,
+    "merry": "Joyeux" ,
+    "christmas":"Noel" ,
     "and": "et" ,
     "happy": "Content",
-    "New": "Nouveau",
-    "Year": "An",
+    "new": "Nouveau",
+    "year": "An",
 };
 
 
@@ -18,8 +18,13 @@ function translate(userPhrase) {
     let translatePhrase = "";
 
         for (let i=0; i<userPhrase.length; i++) {
-            translatePhrase += `${france[userPhrase[i]]}` + " ";
-        }
+            console.log(france[userPhrase[i]]);
+            if (france[userPhrase[i]] !== undefined){
+                translatePhrase += `${france[userPhrase[i]]}` + " ";       
+            } else {
+                alert("I'm too busy learning javascript to work on my french");
+            }    
+        }  
 
         document.querySelector("#translationPhrase").innerHTML = translatePhrase;
     }

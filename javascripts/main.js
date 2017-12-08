@@ -35,3 +35,16 @@ function chooseTrans() {
 
 let button = document.getElementById("translate");
 button.addEventListener("click", chooseTrans);
+
+let clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", clear);
+
+
+function clear () {
+    document.getElementById("language").value = " ";
+    document.getElementById ("translationPhrase").innerHTML = " ";
+    document.getElementById("spanish").checked = false;
+    document.getElementById("german").checked = false;
+    document.getElementById("french").checked = false;
+    document.getElementById("japanese").checked = false;
+}

@@ -16,7 +16,7 @@ function chooseTrans() {
         }
 
      }
-    var EngPhrase = document.getElementById("language").value;
+    var EngPhrase = document.getElementById("language").value.toLowerCase();
     var userPhrase = EngPhrase.split(" ");
 
     if (selectedLang === "spanish") {

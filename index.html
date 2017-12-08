@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
     <title>Translator</title>
 </head>
-<body>
-    <div>
-        <h3>Enter your text to be converted in the field below!</h3>
-        <input id="language" type="text" name="textfield"> 
-    </div>
-        <span><br></span>
-    <div>   
-        <input id="spanish" type="radio" name="language">Spanish<br>
-        <input id="german" type="radio" name="language">German<br>
-        <input id="french" type="radio" name="language">French<br>
-        <input id="japanese" type="radio" name="language">Japanese
-    </div>
-    <br>
+<body class="body">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+                <div>
+                    <h1 class="relative">Enter Your Text Below to Let Santa's Elves Work Their Magic!</h1>
+                <h2> <input class="relative redbg" id="language" type="text" name="textfield"> </h2>
+                </div>
+                    <span><br></span>
+                <h2 class="relative red">   
+                    <input id="spanish" type="radio" name="language">   Spanish<br>
+                </h2>
 
-    <button id="translate">Translate!</button> <button id="clear">Clear</button>
-    
-    <h3> Your translation is:</h3>
-    <div id="translationPhrase"></div>
-    
+                <h2 class="relative green">     
+                    <input id="german" type="radio" name="language">    German<br>
+                </h2>  
+
+                <h2 class="relative red"> 
+                    <input id="french" type="radio" name="language">    French<br>
+                </h2>  
+
+                <h2 class="relative green"> 
+                    <input id="japanese" type="radio" name="language">  Japanese
+                </h2>
+
+                <br>
+
+                <h2>
+                    <button id="translate" class="relative redbg">Translate!</button> 
+                    <button id="clear" class ="relative redbg">Clear</button>
+                </h2>
+
+                <h2 class="relative bigfont"> Your translation is:</h2>
+                <h2 id="translationPhrase" class="relative biggerfont"></h2>
+          </div>
+        </div>
+    </div>
+    <div class="col-2">
+        
+    </div>
+                
     <script src="dist/bundle.js"></script>
 </body>
 </html>

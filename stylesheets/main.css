@@ -1,0 +1,33 @@
+.body {
+  background-image: url("https://www.planwallpaper.com/static/images/christmas_1.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: 'Mountains of Christmas', sans-serif;
+  color: white; }
+
+.red {
+  color: #FF0012; }
+
+.redbg {
+  background-color: #FF0012;
+  color: #00FF3E;
+  border: 5px solid #FF0012; }
+
+.green {
+  color: #00FF3E; }
+
+.relative {
+  position: relative;
+  /* display: inline; */ }
+
+.bigfont {
+  font-size: 250%; }
+
+.biggerfont {
+  font-size: 450%;
+  font-weight: bolder; }
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
